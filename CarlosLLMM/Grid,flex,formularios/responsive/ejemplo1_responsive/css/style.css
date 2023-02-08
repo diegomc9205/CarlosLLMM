@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    float: left;
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-color: lavender;
+        color: darkred;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background-color: darkred;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+@media screen and (min-width:801px)and(max-width:1199px) {
+    body {
+        background-color: aqua;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <fieldset>
+        <div class="caja1">
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend><b>Personales:</b></legend>
+                    Nombre*:
+                    <input type="text" name="Nombre">
+                    Apellidos:
+                    <input type="text" name="Apellidos" placeholder="Los dos apellidos"><br><br>
+                    Edad:
+                    <input type="number" name="Edad">
+                    Sexo
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="caja2">
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend><b>Datos de contacto:</b></legend>
+                    Email*
+                    <input type="email" name="email">
+                    Dirección:
+                    <input type="text" name="Dirección" placeholder="Calle, nº, ciudad, Provincia"><br><br>
+                    Código Postal
+                    <input type="number" name="quantity">
+                    Ciudad
+                    <input type="text" name="Ciudad" placeholder="Madrid">
+                    Provincia
+                    <select name="Habitaciones">
+                        <option value="Seleccionar" disabled selected>Seleccionar</option>
+                        <option value="Jaen">Jaen</option>
+                        <option value="Cordoba">Cordoba</option>
+                    </select>
+                    Clave
+                    <input type="password" name="Clave">
+                </fieldset>
+            </form>
+        </div>
+        <div class="caja3">
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend><b>Datos de Reserva</b> </legend>
+                    Fecha
+                    <input type="date" name="date" value="1992-11-11">
+                    Hora
+                    <input type="time" name="hora" value="20:00">
+                    Habitación
+                    <select name="Habitaciones">
+                        <option value="Individual">Individual</option>
+                        <option value="Doble">Doble</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+        <div class="caja4">
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend><b>Preferencias</b></legend>
+                    Frutos secos:
+                    <select name="Frutos secos" size="5">
+                        <option value="Cerezas">Cerezas</option>
+                        <option value="Fresas">Fresas</option>
+                        <option value="Melocotones">Melocotones</option>
+                        <option value="Albaricoques">Albaricoques</option>
+                        <option value="No lo sé" disabled selected>No lo sé</option>
+                    </select>
+                    Refrescos
+                    <input type="number" name="number" value="12"><br><br>
+                    Ingredientes:<br>
+                    Pimiento<input type="checkbox" name="Pimiento" value="Pimiento">
+                    Champiñon<input type="checkbox" name="Champiñon" value="Champiñon">
+                    Extra Queso<input type="checkbox" name="Queso" value="Extra Queso"> <br><br>
+                    Color
+                    <input type="color" name="morado"><br><br>
+                    Sugerencias
+
+                    <textarea name="message" rows="10" cols="245">
+
+                        </textarea>
+
+                </fieldset>
+            </form>
+
+        </div>
+        <div class="caja4">
+            <form action="/action_page.php">
+
+                <fieldset>
+                    <legend><b>Varios</b></legend>
+                    Fotos
+                    <input type="file" name="archivosubido">
+                    Currúculum PDF
+                    <input type="file" name="archivosubido2">
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+        <div class="caja5">
+            <form action="/action_page.php">
+                <fieldset>
+                    <input type="button" id="1" value="Mandar datos">
+                    <input type="button" id="2" value="Borrar datos"><br>
+                    <input type="button" id="3" value="Yo no hago nada">
+                </fieldset>
+
+
+            </form>
+
+        </div>
+    </fieldset>
+</body>
+
+</html>

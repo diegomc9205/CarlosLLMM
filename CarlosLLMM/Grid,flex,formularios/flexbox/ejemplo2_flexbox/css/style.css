@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: blanchedalmond;
+    height: 300px;
+    width: 80%;
+    margin: 20px auto;
+    border: 10px solid black;
+    display: flex;
+    align-items: flex-end;
+    padding: 2em;
+    justify-content: center;
+    
+}
+
+.container div{
+    background-color: aqua;
+    border: 1px solid black;
+    height: 100px;
+    width: 25%;
+   
+}
+.container div:nth-child(2){
+    align-self: center;
+}

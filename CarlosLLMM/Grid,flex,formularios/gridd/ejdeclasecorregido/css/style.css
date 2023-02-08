@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 25% auto 25% ;
+    grid-template-rows: repeat(3,100px);
+    gap: 1em;/* pone margenes tanto a las filas como a las columnas entre los apartados*/
+
+}
+
+.container *{/*con esto llamamos a todos los atribvutos del contenedor(header,footer,article...*/
+    background-color: brown;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header, footer{
+    grid-column: 1/4;
+}
+/*diseño adaptativo para cuando la pantalla tenga menos de 600px*/
+@media screen and (max-width:600px){
+    aside,article{/*llamamos a los articulos que queremos que bajen y se ponga cada uno en una fila que ocupe todo*/
+        grid-column: 1/4;
+
+    }
+/*cambiamos las filas de 3 a 5 que es las que ahora tendremos*/
+    .container{
+        grid-template-rows:repeat(5, 100px);
+    }
+
+    
+}
+
+

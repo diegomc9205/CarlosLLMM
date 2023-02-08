@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: repeat(3, 20%);
+    width: 80%;
+    margin: 20px auto;
+    background-color: gray;
+    height: 600px;
+    padding: 1em;
+    justify-content: start;
+    align-content: space-evenly;
+    grid-column-gap: 5px ;
+}
+
+.container div {
+    background-color: bisque;
+    border: 10px solid black;
+}
