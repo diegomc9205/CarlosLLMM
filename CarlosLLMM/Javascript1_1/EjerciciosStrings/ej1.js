@@ -1,12 +1,15 @@
-function info(_String) {
+var palabra = prompt("introduce la palabra");
+document.write(comprobar(palabra));
 
-  var resultado = "La cadena \""+cadena+"\" ";
+function comprobar(texto) {
+
+  var resultado = texto + " ";
 
   // Comprobar mayúsculas y minúsculas
-  if(cadena == cadena.toUpperCase()) {
+  if(texto == texto.toUpperCase()) {
     resultado += " está formada sólo por mayúsculas";
   }
-  else if(cadena == cadena.toLowerCase()) {
+  else if(texto == texto.toLowerCase()) {
     resultado += " está formada sólo por minúsculas";
   }
   else {
@@ -15,5 +18,3 @@ function info(_String) {
 
   return resultado;
 }
-var palabra =+ prompt("introduce la palabra")
-document.write(info.cadena)
