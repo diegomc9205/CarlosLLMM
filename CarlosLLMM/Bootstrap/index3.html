@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Esto es mi Header de bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="img/Logo.JPG" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Mis Películas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- formulario css -->
+
+    <div class="contacto">
+
+        <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>En breve nos pondremos en contacto</h3>
+            <form>
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" placeholder="Nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar_email">Email
+                    </label>
+                    <input type="email" name="introducir_email" id="email" placeholder="Email">
+                </p>
+
+                <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="teléfono">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                        placeholder="Comentarios"></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+
+            </form>
+        </div>
+    </div>
+    <h2 class="ubicacion">Aquí dejo los la ubicación de los mejores cines de la provincia</h2>
+    <div class="mapa">
+        <center><a class="mapa1"
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.7763975883145!2d-3.6367532487901504!3d38.09886820111963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6e9b310f54b527%3A0x89c7f3e7677bd6a!2sCentro%20de%20Ocio%20Bowling%20Linares!5e0!3m2!1ses!2ses!4v1678358664723!5m2!1ses!2ses"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" target="mapa">Linares</a>
+
+        <a class="mapa2"
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614.779479301586!2d-3.783259867054799!3d37.77375223552989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7b77ae4e721%3A0xdd00715ab85d15e6!2sMulticines%20La%20Loma%20-%20Cines%20-%20UCC!5e0!3m2!1ses!2ses!4v1678358797492!5m2!1ses!2ses"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" target="mapa">Jaen</a></center>
+
+        <iframe name="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.9773844504907!2d-3.631253800000004!3d38.0941902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6e9bd065a783ed%3A0x2d4b0fd6aae7f47e!2sEscuela%20Estech!5e0!3m2!1ses!2ses!4v1674728582012!5m2!1ses!2ses"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+    </div>
+
+
+</body>
+
+</html>

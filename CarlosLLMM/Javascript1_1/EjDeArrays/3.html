@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var person = [];
+        var edad = [];
+        var max = 0;
+        var per="";
+        for (let index = 0; index <= 2; index++) {
+            var pedirNombre = prompt("inserta nombre");
+            var pedirEdad =prompt("inserta edad");
+            person[index] = pedirNombre;
+            edad[index] = pedirEdad;
+
+        }
+        for (let i = 0; i < edad.length; i++) {
+            if (max < edad[i]) {
+                max = edad[i];
+                per =person[i];
+            }
+
+        }
+        document.write("el nombre es: "+per)
+
+
+    </script>
+</body>
+
+</html>

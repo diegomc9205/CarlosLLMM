@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let texto = prompt("introduce el texto")
+
+        var contador = 0;
+        for (let index = 0; index < texto.length; index++) {
+            if (texto[index].toLowerCase() == "a" || texto[index].toLowerCase() == "e" || texto[index].toLowerCase()
+                == "i" || texto[index].toLowerCase() == "o" || texto[index].toLowerCase() == "u") {
+                contador++
+            }
+        }
+        document.write(contador);
+    </script>
+</body>
+
+</html>

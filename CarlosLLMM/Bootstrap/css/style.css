@@ -1,7 +1,185 @@
-#prueba{
-background-color:rgb(0, 225, 255);
-height: 200px;
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
-#pruebacol{
-    background-color: white;
+
+/* ajusta el tamaño del logo */
+.navbar-brand img {
+  height: 150px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: transparent;
+}
+
+/* con esto ponemos en una posicion absoluta en la esquina infeiror derecha lo intente con Gridd pero a la hora de adaptarloa pantalla pequña no conseguia colocarlo*/
+.img-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.img-footer1{
+  display: flex;
+  justify-items: flex-end;
+}
+
+/*Pagina principal la card con esto lo que hace es moverlos hacia abajo al redimensionar la web*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.card {
+  width: 30em;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgcentral {
+  width: 100%;
+  height: 100%;
+}
+
+/*IMagen*/
+.parent {
+ 
+  /* Ubicación de la imagen */
+  background-image: url('../img/filmoscope-4k-retro-smoke-cinema.jpg');
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+  background-position: center center;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  background-color: transparent;
+  height: 100vh;
+}
+
+/*Pagina 2 con esto lo que hace es moverlos hacia abajo al redimensionar la web*/
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.sugerencias {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+/*Contacto*/
+.contacto {
+  width: 860px;
+  height: auto;
+  margin: 100px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a9ab44;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a9ab44;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+/*tercera pagina Contacto*/
+#enviar {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #06f569;
+  border-color: #06f569;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #a9ab44;
+}
+
+
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #a9ab44;
+}
+
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
 }

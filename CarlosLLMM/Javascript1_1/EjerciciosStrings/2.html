@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var palabra = prompt("escribe una palabra en minuscula");
+        function PonerPrimeraLetraEnMayuscula(pal) {
+            // palabra.charAt(0); //nos devuelve la primera letra
+            // palabra.slice(1); // nos devuelve el resto de la palabra quitando la primera letra
+            return pal.charAt(0).toUpperCase() + pal.slice(1);
+        }
+
+        document.write(PonerPrimeraLetraEnMayuscula(palabra)); // nos devuelve la palabra con la primera letra mayuscula
+
+        /*
+        function PonerPrimeraLetraEnMayuscula(pal) {
+          document.write(palabra.substring(0,1).toUpperCase()+palabra.substring(1,str.length)); 
+        }
+        var palabra = prompt("escribe una palabra en minuscula");
+       PonerPrimeraLetraEnMayuscula(palabra); // nos devuelve la palabra con la primera letra mayuscula
+        
+        
+        */
+    </script>
+</body>
+
+</html>

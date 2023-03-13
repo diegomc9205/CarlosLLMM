@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let texto = prompt("introduce el texto")
+
+        var conta = 0;
+        var conte = 0;
+        var conti = 0;
+        var conto = 0;
+        var contu = 0;
+
+        for (let index = 0; index < texto.length; index++) {
+            if (texto[index].toLowerCase() == "a") {
+
+                conta++
+            }
+            if (texto[index].toLowerCase() == "e") {
+
+                conte++
+            }
+            if (texto[index].toLowerCase() == "i") {
+
+                conti++
+            }
+            if (texto[index].toLowerCase() == "o") {
+                conto++
+            }
+            if (texto[index].toLowerCase() == "u") {
+                contu++
+            }
+
+        }
+        document.write("contiene la a " + conta + " veces");
+        document.write("contiene la e " + conte + " veces");
+        document.write("contiene la i " + conti + " veces");
+        document.write("contiene la o " + conto + " veces");
+        document.write("contiene la u " + contu + " veces");
+
+
+    </script>
+</body>
+
+</html>

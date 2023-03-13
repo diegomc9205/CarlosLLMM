@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       var cadena = prompt("Introduce un Texto que contenga paréntesis:");
+    //Longitud de la cadena
+    var numchar = cadena.length;
+    var j;
+    var car;
+    var salida = "";
+    var copiar = false;
+        
+	for (j = 0; j < numchar; j++) {
+		car = cadena.charAt(j);    //recupera el caracter i del string.
+		if (car == ")") {
+            copiar = false;
+        }
+        if (copiar) {
+            salida = salida + car;
+        }
+        if (car == "(") {
+                copiar = true;
+        }
+    }
+    document.write(salida);
+    </script>
+</body>
+
+</html>

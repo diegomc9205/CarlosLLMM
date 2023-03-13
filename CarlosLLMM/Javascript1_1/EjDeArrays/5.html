@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var estilos = ["Jazz", "Blues"]
+        document.write(estilos.slice(0) + "<br>");
+        estilos.push("RockAndRoll")
+        document.write(estilos.slice(0) + "<br>");
+        if ((estilos.length % 2 )==0 ) {
+            var mitad = (estilos.length / 2) + 1;
+            estilos[mitad] = "Clasico";
+            document.write(estilos.slice(0) + "<br>");
+        } else {
+
+            document.write(estilos.slice(0) + "<br>");
+            document.write("es par, no tiene elemento central");
+        }
+        document.write(estilos[0]);
+        estilos.unshift("Rap");
+        estilos.unshift("Reggae");
+
+
+
+    </script>
+</body>
+
+</html>

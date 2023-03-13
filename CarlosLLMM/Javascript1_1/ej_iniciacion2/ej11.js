@@ -4,7 +4,7 @@ let uno = 0;
 let dos = 0;
 let tres = 0;
 do {
-    num = Math.floor((Math.random() * 99) + 1);
+    numero = Math.floor((Math.random() * 99) + 1);
     if ((numero != uno) && (numero != dos) && (numero != 3)) {
         document.write(num + "<br>"); cont++;
         if (cont == 1) {

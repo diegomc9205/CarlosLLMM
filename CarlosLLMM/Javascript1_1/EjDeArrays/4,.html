@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      var a = 0;
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P',
+            'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+       
+
+        function SacarLetra(dni) {
+        
+            let a = (dni % 23);
+
+            return letras[a];
+
+        }   
+
+        var dni = prompt("inserta DNI");
+        var b=parseInt(dni);
+        var c=false;
+        for (let index = 0; index < dni.length; index++) {
+            if (b[index]=! 1||2||3||4||5||6||7||8||9||0) {
+                c=true
+            
+        }
+            
+        }
+       
+        document.write(SacarLetra(dni))
+
+
+    </script>
+</body>
+
+</html>

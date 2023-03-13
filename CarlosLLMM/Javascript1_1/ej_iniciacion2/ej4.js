@@ -5,10 +5,10 @@ do {
         n1=Number(n1);
         sum=sum+n1;
     } else {
-        if(n1!=undefined){
+        if(n1!=null){
         alert(n1+"no es un numero")
         }
     }
     
-} while (n1!=undefined);
+} while (n1!=null);
 document.write(sum)
