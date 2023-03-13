@@ -19,9 +19,9 @@ footer {
   right: 0;
   bottom: 0;
 }
-.img-footer1{
-  display: flex;
-  justify-items: flex-end;
+
+.nav-link {
+  color: rgb(12, 12, 12);
 }
 
 /*Pagina principal la card con esto lo que hace es moverlos hacia abajo al redimensionar la web*/
@@ -50,7 +50,7 @@ footer {
 
 /*IMagen*/
 .parent {
- 
+
   /* Ubicación de la imagen */
   background-image: url('../img/filmoscope-4k-retro-smoke-cinema.jpg');
   /* Para que la imagen de fondo no se repita */
@@ -61,6 +61,34 @@ footer {
   background-size: cover;
   background-color: transparent;
   height: 100vh;
+}
+
+.parent2 {
+
+  /* Ubicación de la imagen */
+  background-image: url('../img/galaxia.jpg');
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+  background-position: center center;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  background-color: transparent;
+  height: 340vh;
+}
+
+.parent3 {
+
+  /* Ubicación de la imagen */
+  background-image: url('../img/contacto.jpg');
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+  background-position: center center;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  background-color: transparent;
+  height: 270vh;
 }
 
 /*Pagina 2 con esto lo que hace es moverlos hacia abajo al redimensionar la web*/
@@ -150,7 +178,10 @@ span {
   color: #a9ab44;
 }
 
-
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
 
 h1 {
   font-size: 39px;
@@ -178,8 +209,43 @@ p {
 
 .ubicacion {
   text-align: center;
+  color: white;
 }
 
 iframe {
   width: 100%;
 }
+
+
+@media (min-width: 576px) {
+
+  .mapa {
+    width: 70%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    background-color: transparent;
+  }
+}
+
+
+
+
+@media (min-width: 768px) { 
+  .mapa {
+    width: 90%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    background-color: transparent;
+  }
+
+ }
